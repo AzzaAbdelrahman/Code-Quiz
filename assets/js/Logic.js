@@ -1,19 +1,17 @@
 // user score
 var userScore = 0;
 
-// sounds when a correct answer is chosen
-var correctAudio = document.createElement ("audio");
-correctAudio.setAttribute ('src', 'assets/sfx/correct.wav');
+// sound files
+var correctAudio = document.createElement("audio");
+correctAudio.setAttribute('src', 'assets/sfx/correct.wav');
 
-// sounds when a incorrect answer is chosen
-var wrongAudio = document.createElement ("audio");
-wrongAudio.setAttribute ('src', 'assets/sfx/incorrect.wav');
+var wrongAudio = document.createElement("audio")
+wrongAudio.setAttribute('src', 'assets/sfx/incorrect.wav');
 
-
-// set timer to countdown
+// countdown time
 var time = 90;
 
-// addning a function in order to for the countdown to function
+// func to count down the time
 function countDown() {
     let timer = setInterval(function() {
         time --;
@@ -31,6 +29,8 @@ function countDown() {
     }, 1000);
 };
 
+// display the questions in quiz format
+
 var index = 0;
 
 // random the question order
@@ -41,9 +41,7 @@ quizQuestions.sort(() => Math.random() - 0.5);
 function qDisplay(index) {
     document.getElementById("question-title").innerHTML = quizQuestions[index].question;
 
-    for (let i = 0; 
-        i < quizQuestions[index].choices.length; 
-        i++) {
+    for (let i = 0; i < quizQuestions[index].choices.length; i++) {
         // put choices into buttions
         let buttons = document.createElement('button');
         buttons.innerText = (i+1) + '. ' + quizQuestions[index].choices[i];
@@ -62,6 +60,7 @@ function qDisplay(index) {
                 // console.log(e.target.innerText);
                 // console.log(index);
                 nextQestion(index);
+
             } else {
                 // if answer is wrong, countdown time -10s
                 if(time >= 10) {
@@ -84,7 +83,6 @@ function qDisplay(index) {
         
     };
 };
-
 
 // show feedback after user answer
 var feedback = document.getElementById('feedback');
@@ -151,7 +149,6 @@ document.getElementById('start').addEventListener("click", function(){
 
 // when click the submit button, save the name and score
 var submitBtn = document.getElementById('submit')
-
 
 submitBtn.addEventListener('click', function() {
     var initials = document.getElementById("initials").value;
