@@ -1,10 +1,8 @@
 # Code-Quiz
-Challenge 6 
+Week 6 Challenge 
 
 # Description
 The aim of this project is to create a code quiz Working with Web APIs
-
-
 
 
 
@@ -32,7 +30,10 @@ WHEN the game is over
 THEN I can save my initials and score
 
 
+
+
 # Questions 
+![Alt text](chall.png)
 ![Alt text](q1.png)
 ![Alt text](q2.png)
 
