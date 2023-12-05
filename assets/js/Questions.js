@@ -1,15 +1,4 @@
 const quizQuestions =[
-    {
-        question: "What is the most popular front-end web development library?",
-        choices: ["jQuery", "React", "Angular", "Vue"],
-        correctAnswer: "jQuery"
-    },
-
-    {
-        question: "What is the most popular front-end web development library?",
-        choices: ["jQuery", "React", "Angular", "Vue"],
-        correctAnswer: "jQuery"
-    },
 
     {
         question: "What is the most popular front-end web development library?",
@@ -30,12 +19,6 @@ const quizQuestions =[
     },
 
     {
-        question: "What is the most popular front-end web development library?",
-        choices: ["jQuery", "React", "Angular", "Vue"],
-        correctAnswer: "jQuery"
-    },
-
-    {
         question: "What is the most popular front-end web development language for creating user interfaces?",
         choices: ["HTML", "CSS", "JavaScript", "TypeScript"],
         correctAnswer: "HTML"
@@ -46,15 +29,4 @@ const quizQuestions =[
         choices: ["Bootstrap", "React", "Angular", "Vue"],
         correctAnswer: "React"
     },
-    {
-        question: "What is the most popular front-end web development framework?",
-        choices: ["Bootstrap", "React", "Angular", "Vue"],
-        correctAnswer: "React"
-    },
-    {
-        question: "What is the most popular front-end web development framework?",
-        choices: ["Bootstrap", "React", "Angular", "Vue"],
-        correctAnswer: "React"
-    }
-    
 ];
