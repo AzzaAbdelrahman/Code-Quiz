@@ -48,4 +48,4 @@ THEN I can save my initials and score
 Links: 
 Link to the deployed web: https://azzaabdelrahman.github.io/Code-Quiz/
 
-Link to GitHib repo: https://github.com/AzzaAbdelrahman/Code-Quiz
+Link to GitHub repo: https://github.com/AzzaAbdelrahman/Code-Quiz
