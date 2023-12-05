@@ -39,6 +39,7 @@ THEN I can save my initials and score
 
 
 # Highscores
+![Alt text](alldone.png)
 ![Alt text](highscore.png)
 
 
