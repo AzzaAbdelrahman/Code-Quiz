@@ -11,7 +11,7 @@ wrongAudio.setAttribute ('src', 'assets/sfx/incorrect.wav');
 
 
 // set timer to countdown
-var time = 45;
+var time = 90;
 
 // addning a function in order to for the countdown to function
 function countDown() {
@@ -41,7 +41,9 @@ quizQuestions.sort(() => Math.random() - 0.5);
 function qDisplay(index) {
     document.getElementById("question-title").innerHTML = quizQuestions[index].question;
 
-    for (let i = 0; i < quizQuestions[index].choices.length; i++) {
+    for (let i = 0; 
+        i < quizQuestions[index].choices.length; 
+        i++) {
         // put choices into buttions
         let buttons = document.createElement('button');
         buttons.innerText = (i+1) + '. ' + quizQuestions[index].choices[i];

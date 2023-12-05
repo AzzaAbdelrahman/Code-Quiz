@@ -27,7 +27,7 @@ const quizQuestions = [
     {
         question: "What is the most popular front-end web development language for creating web applications?",
         choices: ["JavaScript", "PHP", "Python", "Ruby"],
-        correctAnswer: "JavaScript"  
+        correctAnswer: "JavaScript"
     },
 
     {
@@ -36,20 +36,15 @@ const quizQuestions = [
         correctAnswer: "All of of the above"
     },
 
-
     {
         question: "What is the most popular front-end web development language for creating user interfaces?",
         choices: ["HTML", "CSS", "JavaScript", "TypeScript"],
         correctAnswer: "HTML"
-      },
+    },
 
-
-      {
+    {
         question: "What is the most popular front-end web development framework?",
         choices: ["Bootstrap", "React", "Angular", "Vue"],
         correctAnswer: "React"
-      },
-
-
-
-]
+    },
+];
