@@ -1,7 +1,7 @@
 // user score
 var userScore = 0;
 
-// sound files
+// add sound files (correct and incorrect audios)
 var correctAudio = document.createElement("audio");
 correctAudio.setAttribute('src', 'assets/sfx/correct.wav');
 
@@ -9,9 +9,9 @@ var wrongAudio = document.createElement("audio")
 wrongAudio.setAttribute('src', 'assets/sfx/incorrect.wav');
 
 // countdown time
-var time = 90;
+var time = 90; // 90  seconds
 
-// func to count down the time
+// function to count down the time
 function countDown() {
     let timer = setInterval(function() {
         time --;
@@ -29,7 +29,6 @@ function countDown() {
     }, 1000);
 };
 
-// display the questions in quiz format
 
 var index = 0;
 
@@ -56,9 +55,7 @@ function qDisplay(index) {
                 // play audio
                 correctAudio.play();
                 showFeedback('right');
-                // console.log("ohye");
-                // console.log(e.target.innerText);
-                // console.log(index);
+                
                 nextQestion(index);
 
             } else {
@@ -73,10 +70,6 @@ function qDisplay(index) {
                 // show feedback
                 showFeedback('wrong');
 
-                // console.log("ohno");
-                // console.log(e.target.innerText);
-                // console.log(index);
-                // load next question
                 nextQestion(index);
             };
         });
@@ -98,7 +91,7 @@ function showFeedback(str) {
     } else {
         return;
     };
-    // append feedback msg
+    // append feedback message
     feedback.appendChild(msg);
     // remove class hide (show the feedback)
     feedback.className = 'feedback';
