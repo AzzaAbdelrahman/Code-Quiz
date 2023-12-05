@@ -46,5 +46,5 @@ const quizQuestions = [
         question: "What is the most popular front-end web development framework?",
         choices: ["Bootstrap", "React", "Angular", "Vue"],
         correctAnswer: "React"
-    },
+    }
 ];
